@@ -158,6 +158,13 @@ header .container {
     padding: 2rem 0;
 }
 
+/* Footer */
+
+footer {
+    background-color: rgb(51, 51, 51);
+    padding: 2rem 0;
+}
+
 
 
 
@@ -249,6 +256,10 @@ header .container {
 
     #benefits .col {
         width: calc(100% / 3 - 1rem);
+    }
+
+    #free .container, footer .container {
+        width: 40%;
     }
 
 }
