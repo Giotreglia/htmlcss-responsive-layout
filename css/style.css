@@ -145,6 +145,10 @@ header .container {
     margin: 2rem 0;
 }
 
+#benefits .col {
+    margin: 2rem 0;
+}
+
 
 
 
@@ -192,6 +196,22 @@ header .container {
     .col-text {
         width: 70%;
     }
+
+    #benefits .columns {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    #benefits .col {
+        width: calc(100% / 2 - 1rem);
+    }
+
+    #benefits .container {
+        text-align: center;
+        padding: 2rem 0;
+    }
 }
 
 /* Desktop */
@@ -214,6 +234,10 @@ header .container {
         width: 75%;
     }
 
+    #benefits .col {
+        width: calc(100% / 3 - 1rem);
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -221,6 +245,8 @@ header .container {
         max-width: calc(1200px - 5rem);
     }
 }
+
+
 
 
 
