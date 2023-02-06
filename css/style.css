@@ -17,6 +17,11 @@
     margin: auto;
 }
 
+.container-small {
+    width: 50%;
+    margin: auto;
+}
+
 .flex {
     display: flex;
 }
@@ -151,6 +156,10 @@ header .container {
 
 #benefits .container {
     text-align: center;
+    padding: 2rem 0;
+}
+
+#free .container-small {
     padding: 2rem 0;
 }
 
