@@ -59,13 +59,25 @@
     color: black;
 }
 
+.debug .card {
+    height: 300px;
+}
+
 /* Regole CSS */
+
+body {
+    padding-top: 5rem;
+}
 
 /* Header */
 
 header {
     background-color: var(--primary-color);
     height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 header .container {
@@ -76,6 +88,22 @@ header .container {
     line-height: 100%;
     vertical-align: middle;
 }
+
+/* Main */
+
+.cards {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 0;
+    gap: 2rem;
+}
+
+.card {
+    width: 100%;
+    background-color: var(--primary-light-color);
+}
+
+
 
 /* Responsive */
 
@@ -92,6 +120,19 @@ header .container {
 @media (min-width: 768px) {
     .container {
         max-width: calc(768px - 5rem);
+    }
+
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: calc((100% / 3) - 2rem);
+    }
+
+    #servizi .card:first-child {
+        width: calc(((100% / 3) * 2) - 1rem);
     }
 }
 
