@@ -38,6 +38,14 @@
     align-items: center;
 }
 
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
 .bg-prim {
     background-color: var(--primary-color);
 }
@@ -55,12 +63,26 @@
 .debug-box {
     height: 100%;
     width: 100px;
-    background-color: var(--primary-light-color);
     color: black;
 }
 
 .debug .card {
     height: 300px;
+}
+
+.debug .nav-logo, .debug .nav-menu {
+    background-color: var(--primary-light-color);
+}
+
+.debug .columns {
+    height: 300px;
+    background-color: red;
+}
+
+.debug .col {
+    height: 100px;
+    background-color: yellow;
+    text-align: center;
 }
 
 /* Regole CSS */
@@ -92,7 +114,6 @@ header .container {
 /* Main */
 
 .cards {
-    flex-direction: column;
     justify-content: space-between;
     padding: 2rem 0;
     gap: 2rem;
@@ -101,7 +122,17 @@ header .container {
 .card {
     width: 100%;
     background-color: var(--primary-light-color);
+    flex-basis: calc((40vh / 3) - 1rem);
 }
+
+.columns {
+    width: 100%;
+    margin: 2rem 0;
+    padding: 2rem 0;
+}
+
+
+
 
 
 
@@ -125,14 +156,15 @@ header .container {
     .cards {
         flex-direction: row;
         flex-wrap: wrap;
+        gap: 1rem;
     }
 
     .card {
-        width: calc((100% / 3) - 2rem);
+        flex-basis: calc((100% / 3) - 1rem);
     }
 
     #servizi .card:first-child {
-        width: calc(((100% / 3) * 2) - 1rem);
+        flex-basis: calc(((100% / 3) * 2) - 0.5rem);
     }
 }
 
@@ -142,6 +174,15 @@ header .container {
     .container {
         max-width: calc(992px - 5rem);
     }
+
+    #strategic .columns {
+        flex-direction: row;
+    }
+
+    #strategic .col {
+        width: 50%;
+    }
+
 }
 
 @media (min-width: 1200px) {
