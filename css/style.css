@@ -149,6 +149,11 @@ header .container {
     margin: 2rem 0;
 }
 
+#benefits .container {
+    text-align: center;
+    padding: 2rem 0;
+}
+
 
 
 
@@ -208,10 +213,14 @@ header .container {
         width: calc(100% / 2 - 1rem);
     }
 
-    #benefits .container {
-        text-align: center;
-        padding: 2rem 0;
+    #about .columns {
+        flex-direction: row;
     }
+
+    #about .col {
+        width: 50%;
+    }
+
 }
 
 /* Desktop */
