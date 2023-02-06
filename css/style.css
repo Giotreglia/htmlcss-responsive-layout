@@ -3,3 +3,113 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --secondary-color: rgb(151, 146, 228);
+    --primary-color: rgb(0, 132, 253);
+    --primary-light-color: rgb(181, 221, 255);
+}
+
+/* Utility */
+
+.container {
+    max-width: 320px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;  
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.bg-prim {
+    background-color: var(--primary-color);
+}
+
+.bg-lightprim {
+    background-color: var(--primary-light-color);
+}
+
+.bg-second {
+    background-color: var(--secondary-color);
+}
+
+/* Debug */
+
+.debug-box {
+    height: 100%;
+    width: 100px;
+    background-color: var(--primary-light-color);
+    color: black;
+}
+
+/* Regole CSS */
+
+/* Header */
+
+header {
+    background-color: var(--primary-color);
+    height: 5rem;
+}
+
+header .container {
+    height: 100%;
+}
+
+.nav-logo, .nav-menu {
+    line-height: 100%;
+    vertical-align: middle;
+}
+
+/* Responsive */
+
+/* Mobile */
+
+@media (min-width: 480px) {
+    .container {
+        max-width: calc(480px - 5rem);
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+    .container {
+        max-width: calc(768px - 5rem);
+    }
+}
+
+/* Desktop */
+
+@media (min-width: 992px) {
+    .container {
+        max-width: calc(992px - 5rem);
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: calc(1200px - 5rem);
+    }
+}
+
+
+
+
+
