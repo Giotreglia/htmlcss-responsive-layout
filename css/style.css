@@ -17,11 +17,6 @@
     margin: auto;
 }
 
-.container-small {
-    width: 50%;
-    margin: auto;
-}
-
 .flex {
     display: flex;
 }
@@ -159,7 +154,7 @@ header .container {
     padding: 2rem 0;
 }
 
-#free .container-small {
+#free .container {
     padding: 2rem 0;
 }
 
