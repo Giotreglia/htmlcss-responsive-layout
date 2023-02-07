@@ -40,6 +40,10 @@
     align-items: center;
 }
 
+.block {
+    display: block;
+}
+
 .inline-block {
     display: inline-block;
 }
@@ -148,6 +152,10 @@ a {
     margin-top: 2rem;
 }
 
+.letter-space {
+    letter-spacing: 2px;
+}
+
 
 /* Regole CSS */
 
@@ -212,7 +220,7 @@ header .container {
 
 }
 
-.card h3 {
+.card h3, .columns h3 {
     font-size: 1.3rem;
 }
 
@@ -263,9 +271,44 @@ span.bg-violet {
     padding: 4rem 0;
 }
 
+/* Sezione Testimonial */
+
+#testimonial .columns {
+    text-align: center;
+}
+
+#testimonial h2 {
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: var(--secondary-color);
+}
+
+#testimonial p {
+    line-height: 2rem;
+}
+
 #testimonial .col {
     background-color: var(--secondary-color);
     margin: 2rem 0;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+#testimonial .col img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.col-text i {
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+.col-text {
+    line-height: 2rem;
 }
 
 #benefits .col {
@@ -330,6 +373,27 @@ footer {
 
     #testimonial .col {
         flex-direction: row;
+        align-items: center;
+    }
+
+    #testimonial h2 {
+        font-size: 2rem;
+    }
+
+    #testimonial h4 {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    #testimonial p {
+        line-height: 2rem;
+        margin-left: 2rem;
+    }
+
+    #testimonial .col p {
+        font-weight: 400;
+        font-size: 1.2rem;
+        text-align: left;
     }
 
     .col-img {
