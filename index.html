@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Responsive</title>
 </head>
 <body class="debug">
@@ -13,10 +17,17 @@
     <header class="bg-prim">
         <div class="container flex space-between align-center">
             <div class="nav-logo debug-box">
-                LOGO
+                <img src="img/logo.png" alt="logo">
             </div>
-            <nav class="nav-menu debug-box">
-                MENU'
+            <i id="hamburger" class="fa-solid fa-bars"></i>
+            <nav class="nav-menu">
+                <ul class="nav-list flex space-between">
+                    <li><a href="#">Planning</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a class="btn btn-white" href="#">Get Started</a></li>
+                </ul>
             </nav>
         </div>
     </header>

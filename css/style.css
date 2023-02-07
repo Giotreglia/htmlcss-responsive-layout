@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 :root {
@@ -66,20 +67,21 @@
     width: 30%;
 }
 
-/* Debug */
-
-.debug-box {
-    height: 100%;
-    width: 100px;
-    color: black;
+.btn {
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
 }
+
+.btn-white {
+    color: black;
+    background-color: white;
+}
+
+/* Debug */
 
 .debug .card {
     height: 300px;
-}
-
-.debug .nav-logo, .debug .nav-menu {
-    background-color: var(--primary-light-color);
 }
 
 .debug .columns {
@@ -109,15 +111,19 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    color: white;
 }
 
 header .container {
     height: 100%;
 }
 
-.nav-logo, .nav-menu {
-    line-height: 100%;
-    vertical-align: middle;
+.nav-menu {
+    display: none;
+}
+
+#hamburger {
+    font-size: 2rem;
 }
 
 /* Main */
@@ -241,6 +247,28 @@ footer {
         max-width: calc(992px - 5rem);
     }
 
+    #hamburger {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+    .nav-list {
+        list-style: none;
+        gap: 1rem;
+    }
+
+    .nav-list a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav-list .btn {
+        color: black;
+    }
+
     #strategic .columns {
         flex-direction: row;
         align-items: flex-end;
@@ -261,6 +289,8 @@ footer {
     #free .container, footer .container {
         width: 40%;
     }
+
+
 
 }
 
