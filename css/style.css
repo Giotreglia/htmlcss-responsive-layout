@@ -68,6 +68,10 @@
     background-color: var(--secondary-color);
 }
 
+.bg-white {
+    background-color: white;
+}
+
 .padding1 {
     padding: 1rem;
 }
@@ -124,12 +128,16 @@ a {
     color: white;
 }
 
+.black {
+    color: black;
+}
+
 .bold {
     font-weight: bold;
 }
 
 .rounded {
-    border-radius: 3rem;
+    border-radius: 2rem;
 }
 
 .text-center {
@@ -150,6 +158,10 @@ a {
 
 .margintop2 {
     margin-top: 2rem;
+}
+
+.margintop1_5 {
+    margin-top: 1.5rem;
 }
 
 .letter-space {
@@ -311,8 +323,33 @@ span.bg-violet {
     line-height: 2rem;
 }
 
+/* Sezione benefits */
+
+#benefits h2 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+#benefits .columns {
+    padding-top: 0;
+}
+
+#benefits .col h2 {
+    color: var(--secondary-color);
+    font-size: 4rem;
+}
+
 #benefits .col {
+    color: var(--secondary-color);
     margin: 2rem 0;
+    text-align: left;
+    padding: 2rem;
+}
+
+#benefits .col p {
+    line-height: 1.5rem;
+    font-size: 0.9rem;
 }
 
 #benefits .container {
@@ -413,6 +450,7 @@ footer {
 
     #benefits .col {
         width: calc(100% / 2 - 1rem);
+        padding-bottom: 2.5rem;
     }
 
     #about .columns {
@@ -491,6 +529,13 @@ footer {
     #benefits .col {
         width: calc(100% / 3 - 1rem);
     }
+
+    #benefits .col h2 {
+        margin-top: 0;
+    }
+
+
+
 
     #free .container, footer .container {
         width: 40%;
