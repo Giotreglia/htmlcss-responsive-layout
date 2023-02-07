@@ -9,6 +9,7 @@
     --secondary-color: rgb(151, 146, 228);
     --primary-color: rgb(0, 132, 253);
     --primary-light-color: rgb(181, 221, 255);
+    --text-grey: rgb(90, 110, 127);
 }
 
 /* Utility */
@@ -59,6 +60,10 @@
     background-color: var(--secondary-color);
 }
 
+a {
+    text-decoration: none;
+}
+
 .w70 {
     width: 70%;
 }
@@ -73,16 +78,41 @@
     font-size: 0.9rem;
 }
 
+.btn-big {
+    border-radius: 1.5rem;
+    padding: 0.5rem 3rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+}
+
 .btn-white {
     color: black;
     background-color: white;
 }
 
-/* Debug */
-
-.debug .card {
-    height: 300px;
+.btn-blu {
+    color: white;
+    background-color: var(--primary-color);
 }
+
+.marginbottom1 {
+    margin-bottom: 1rem;
+}
+
+.marginbottom1_5 {
+    margin-bottom: 1.5rem;
+}
+
+.marginbottom2 {
+    margin-bottom: 2rem;
+}
+
+.margintop2 {
+    margin-top: 2rem;
+}
+
+/* Debug */
 
 .debug .columns {
     min-height: 300px;
@@ -123,11 +153,19 @@ header .container {
 }
 
 #hamburger {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 /* Main */
 
+#first-card img {
+    width: 100%;
+    display: block;
+}
+
+#first-card {
+    padding-bottom: 0;
+}
 .cards {
     justify-content: space-between;
     padding: 2rem 0;
@@ -138,6 +176,20 @@ header .container {
     width: 100%;
     background-color: var(--primary-light-color);
     flex-basis: calc((40vh / 3) - 1rem);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.card h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.card p {
+    color: var(--text-grey);
+    font-weight: bold;
+    line-height: 2rem;
+    font-size: 0.85rem;
 }
 
 .columns {
