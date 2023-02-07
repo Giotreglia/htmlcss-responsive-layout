@@ -208,10 +208,24 @@ header .container {
 
 .nav-menu {
     display: none;
+    transition: all 4s;
 }
 
 #hamburger {
     font-size: 1.5rem;
+}
+
+#hidden-menu {
+    position: fixed;
+    top: 80px;
+    left: 54%;
+    width: 400px;
+    height: 100px;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 2rem;
+    border-radius: 0 0 10px 10px;
+    opacity: 0;
 }
 
 /* Main */
@@ -586,6 +600,12 @@ footer a {
         color: white;
     }
 
+    #hidden-menu .nav-list a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
     .nav-list .btn {
         color: black;
     }
@@ -638,6 +658,10 @@ footer a {
 
     #about .col-dx span {
         left: 45%;
+    }
+
+    .nav-menu:hover #hidden-menu {
+        opacity: 0.8;
     }
 
 
