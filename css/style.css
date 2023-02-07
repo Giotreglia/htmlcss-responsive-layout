@@ -177,8 +177,16 @@ a {
 
 /* Regole CSS */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     padding-top: 5rem;
+}
+
+section {
+    scroll-margin-top: 80px;
 }
 
 /* Header */
