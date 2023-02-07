@@ -48,6 +48,14 @@
     display: inline-block;
 }
 
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
 .flex-col {
     flex-direction: column;
 }
@@ -100,10 +108,8 @@ a {
 
 .btn-big {
     border-radius: 1.5rem;
-    padding: 0.8rem 3rem;
+    padding: 0.8rem 2.5rem;
     font-size: 0.9rem;
-    font-weight: bold;
-    letter-spacing: 0.2rem;
 }
 
 .btn-white {
@@ -307,7 +313,7 @@ span.bg-violet {
     color: white;
 }
 
-#testimonial .col img {
+#testimonial .col img, #about .col img {
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -355,6 +361,31 @@ span.bg-violet {
 #benefits .container {
     text-align: center;
     padding: 2rem 0;
+}
+
+/* Sezione About */
+
+#about h2 {
+    color: var(--secondary-color);
+    font-size: 3rem;
+}
+
+#about h3 {
+    color: var(--secondary-color);
+    font-size: 1.7rem;
+}
+
+#about p {
+    line-height: 2rem;
+    margin: 2rem 0;
+    font-size: 1.1rem;
+}
+
+#about .col-dx span {
+    top: 0;
+    left: 50%;
+    color: var(--secondary-color);
+    font-size: 4rem;
 }
 
 #free .container {
@@ -455,11 +486,26 @@ footer {
 
     #about .columns {
         flex-direction: row;
+        justify-content: space-between;
     }
 
-    #about .col {
-        width: 50%;
+    #about .col-sx {
+        margin-right: 2rem;
+        width: 60%;
     }
+
+    #about .col-dx {
+        margin-right: 4rem;
+        width: 40%;
+    }
+
+    #about .col-dx span {
+        left: 65%;
+    }
+
+
+
+
 
 }
 
@@ -534,11 +580,12 @@ footer {
         margin-top: 0;
     }
 
-
-
-
     #free .container, footer .container {
         width: 40%;
+    }
+
+    #about .col-dx span {
+        left: 45%;
     }
 
 
@@ -549,6 +596,11 @@ footer {
     .container {
         max-width: calc(1200px - 5rem);
     }
+
+    #about .col-dx span {
+        left: 35%;
+    }
+
 }
 
 
