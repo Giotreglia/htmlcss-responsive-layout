@@ -388,8 +388,43 @@ span.bg-violet {
     font-size: 4rem;
 }
 
+/* Sezione Free */
+
 #free .container {
     padding: 2rem 0;
+    text-align: center;
+}
+
+#free span:first-child {
+    color: rgba(201, 196, 278, 1);
+}
+
+#free .col .btn-big {
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+}
+
+#free h3 {
+    color: white;
+    font-size: 2rem;
+}
+
+#free h2 {
+    color: rgb(253, 193, 95);
+    font-size: 4rem;
+}
+
+#free p {
+    line-height: 2rem;
+}
+
+#free .col span a {
+    color: white;
+}
+
+#free span:last-child {
+    color: white;
 }
 
 /* Footer */
