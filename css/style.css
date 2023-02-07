@@ -40,6 +40,10 @@
     align-items: center;
 }
 
+.inline-block {
+    display: inline-block;
+}
+
 .flex-col {
     flex-direction: column;
 }
@@ -255,6 +259,10 @@ footer {
         flex-basis: calc((100% / 3) - 1rem);
     }
 
+    #first-card img {
+        width: 50%;
+    }
+
     #servizi .card:first-child {
         flex-basis: calc(((100% / 3) * 2) - 0.5rem);
     }
@@ -320,6 +328,32 @@ footer {
     .nav-list .btn {
         color: black;
     }
+
+    #first-card {
+        display: flex;
+    }
+
+    #first-card .card-img {
+        width: 50%;
+        text-align: center;
+        position: relative;
+    }
+
+    #first-card .card-img img {
+        width: 70%;
+        position: absolute;
+        bottom: 0;
+        left: 2rem;
+
+    }
+
+    
+
+    #first-card .card-left {
+        width: 50%;
+    }
+
+
 
     #strategic .columns {
         flex-direction: row;
