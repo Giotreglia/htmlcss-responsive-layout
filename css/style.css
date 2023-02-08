@@ -281,6 +281,10 @@ header .container {
     width: 100%;
 }
 
+#strategic .col img {
+    width: 100%;
+}
+
 #strategic .col h3 {
     font-size: 2rem;
     margin: 3rem 0;
@@ -569,6 +573,10 @@ footer a {
         left: 65%;
     }
 
+    #strategic .col img {
+        max-width: 100%;
+    }
+
 
 
 
@@ -662,6 +670,10 @@ footer a {
 
     .nav-menu:hover #hidden-menu {
         opacity: 0.8;
+    }
+
+    #strategic .col-dx img {
+        max-width: 300px;
     }
 
 
